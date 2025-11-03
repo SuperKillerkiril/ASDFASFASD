@@ -1,0 +1,161 @@
+﻿@page "/"
+
+<nav class="navbar-hh">
+    <!-- Левая часть: логотип и название -->
+    <div class="nav-left-hh">
+        <img src="file/Union (1).svg" alt="Логотип" class="logo"/>
+        <span class="company-name">Heading</span>
+    </div>
+
+    <!-- Центр: навигационные ссылки -->
+    <div class="nav-center-hh">
+        <a href="#catalog">Каталог</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+
+    <!-- Правая часть: соц. иконки -->
+    <div class="nav-right-hh">
+        <img src="file/vk.svg"/>
+        <img src="file/Inst.svg"/>
+        <img src="file/TT.svg"/>
+    </div>
+    <!-- Бургер-меню -->
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">✕ Закрыть</button>
+        <a href="#catalog">Каталог</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+</nav>
+
+
+
+<!-- Блок под навигацией -->
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>Вязаные игрушки на заказ</h1>
+        <button class="scroll-down" id="scrollDown">
+            <img src="file/Vector.svg"/>
+        </button>
+    </div>
+</section>
+
+<!-- Целевой блок, куда прокручивает -->
+<section class="catalog-content" id="mainContent">
+    <h2 class="catalog-title">Каталог</h2>
+    <div class="catalog-grid">
+            
+        <!-- Карточка товара -->
+        <div class="product-card">
+            <div class="product-image"></div>
+            <h3 class="product-name">Name</h3>
+            <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim purus nec accumsan feugiat eu, quam massa.
+            </p>
+            <div class="product-footer">
+                <button class="buy-button">Купить</button>
+                <span class="price">123 р.</span>
+            </div>
+        </div>
+            
+        <div class="product-card">...</div>
+        <div class="product-card">...</div>
+    </div>
+    <div class="show-more-container">
+        <button class="show-more-button">Показать ещё...</button>
+    </div>
+</section>
+<section class="delivery-info">
+    <!-- Верхняя полоска -->
+    <div class="delivery-line"></div>
+    <h2 class="delivery-title">Доставка</h2>
+
+    <!-- Первый ряд: 3 этапа + 2 стрелки -->
+    <div class="delivery-row">
+        <!-- Этап 1 -->
+        <div class="delivery-step">
+            <div class="step-icon">
+                <img src="file/Bear.svg" alt="Выбор игрушки">
+            </div>
+            <h3>Выбор игрушки</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <!-- Стрелка -->
+        <div class="delivery-arrow">
+            <img src="file/Vector (3).svg" alt="→">
+        </div>
+
+        <!-- Этап 2 -->
+        <div class="delivery-step">
+            <div class="step-icon">
+             <img src="file/clipboard.svg" alt="Оформление заказа">
+            </div>
+            <h3>Оформление заказа</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <!-- Стрелка -->
+        <div class="delivery-arrow">
+           <img src="file/Vector (3).svg" alt="→">
+        </div>
+
+        <!-- Этап 3 -->
+        <div class="delivery-step">
+            <div class="step-icon">
+                <img src="file/Clock.svg" alt="Ожидание изготовления">
+            </div>
+            <h3>Ожидание изготовления</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim purus nec accumsan feugiat eu, quam massa.</p>
+        </div>
+    </div>
+
+    <!-- Второй ряд: 2 этапа + 1 стрелка -->
+    <div class="delivery-row">
+        <!-- Этап 4 -->
+        <div class="delivery-step">
+            <div class="step-icon">
+                <img src="file/Payment.svg" alt="Оплата">
+            </div>
+            <h3>Оплата</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa sit neque phasellus tempus gravida posuere varius.</p>
+        </div>
+
+        <!-- Стрелка -->
+        <div class="delivery-arrow">
+            <img src="file/Vector (3).svg" alt="→">
+        </div>
+
+        <!-- Этап 5 -->
+        <div class="delivery-step">
+            <div class="step-icon">
+                <img src="file/Truck.svg" alt="Доставка">
+            </div>
+            <h3>Доставка</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erim pellentesque ut posuere sem ut.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    burger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+</script>
