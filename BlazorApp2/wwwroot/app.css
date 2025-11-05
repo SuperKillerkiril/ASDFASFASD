@@ -473,3 +473,87 @@ body {
         transform: rotate(90deg);
     }
 }
+.contact-title {
+    text-align: center;
+    font-size: 96px;
+    color: rgba(136, 103, 136, 1);
+    margin-bottom: 30px;
+}
+.contact-block{
+    display: flex;
+    flex-direction: column;
+}
+.contacts{
+    margin-left: 250px;
+    padding-top: 89px;
+}
+.contacts h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.contacts h4{
+    margin-top: 18px;
+    color: rgba(96, 96, 96, 1);
+    font-size: 22px;
+    font-weight: bold;
+}
+.contacts-mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contacts-mail p{
+    color: #bf86ae;
+    text-decoration: underline;
+    margin-top: 18px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.contacts-mail h4{
+    margin-top: 18px;
+    color: rgba(96, 96, 96, 1);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 174px;
+    background-color: rgba(195, 179, 219, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 115px;
+}
+.footer h2{
+    font-size: 64px;
+    margin: 66px;
+}
+.footer h6{
+    padding-top: 104px;
+    color: rgba(136, 103, 136, 1);
+    font-size: 24px;
+    margin: 10px;
+}
+.footer p{
+    color: rgba(191, 134, 174, 1);
+    margin-bottom: 64px;
+    font-size: 24px;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex: 1;
+}
+.footer-nav button{
+    width: 198px;
+    height: 58px;
+    border-radius: 51px;
+    font-size: 32px;
+    border:none;
+    background-color: rgba(191, 134, 174, 1);
+    color: white;
+}
